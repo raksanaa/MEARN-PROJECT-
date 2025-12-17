@@ -242,6 +242,126 @@ const products = [
     description: "Flame Hashira Rengoku with fiery design",
     img: "https://m.media-amazon.com/images/I/61YnYccEoiL._AC_UF350,350_QL80_.jpg",
     category: "demon hunter"
+  },
+  {
+    id: 31,
+    name: "Naruto Uzumaki Plush",
+    price: 39.99,
+    description: "Orange ninja with dream to become Hokage",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQ&s",
+    category: "anime"
+  },
+  {
+    id: 32,
+    name: "Pikachu Plush",
+    price: 34.99,
+    description: "Electric mouse Pokemon with rosy cheeks",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQ&s",
+    category: "anime"
+  },
+  {
+    id: 33,
+    name: "Totoro Plush",
+    price: 45.99,
+    description: "Forest spirit from Studio Ghibli",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQ&s",
+    category: "anime"
+  },
+  {
+    id: 34,
+    name: "Sailor Moon Plush",
+    price: 41.99,
+    description: "Magical girl warrior of love and justice",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQ&s",
+    category: "anime"
+  },
+  {
+    id: 35,
+    name: "Goku Plush",
+    price: 43.99,
+    description: "Super Saiyan warrior from Dragon Ball",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcUvQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQ&s",
+    category: "anime"
+  },
+  {
+    id: 36,
+    name: "Luffy Plush",
+    price: 38.99,
+    description: "Rubber pirate captain with straw hat",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcVvQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQ&s",
+    category: "anime"
+  },
+  {
+    id: 37,
+    name: "Dragon Plush",
+    price: 49.99,
+    description: "Majestic fire-breathing dragon",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcWvQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQ&s",
+    category: "fantasy"
+  },
+  {
+    id: 38,
+    name: "Phoenix Plush",
+    price: 47.99,
+    description: "Mythical bird that rises from ashes",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcXvQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQ&s",
+    category: "fantasy"
+  },
+  {
+    id: 39,
+    name: "Fairy Plush",
+    price: 32.99,
+    description: "Magical fairy with sparkly wings",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcYvQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQ&s",
+    category: "fantasy"
+  },
+  {
+    id: 40,
+    name: "Pegasus Plush",
+    price: 44.99,
+    description: "Winged horse from Greek mythology",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcZvQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQ&s",
+    category: "fantasy"
+  },
+  {
+    id: 41,
+    name: "Griffin Plush",
+    price: 46.99,
+    description: "Half eagle, half lion mythical creature",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcAvQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQ&s",
+    category: "fantasy"
+  },
+  {
+    id: 42,
+    name: "Forest Spirit Plush",
+    price: 35.99,
+    description: "Mystical guardian of the enchanted forest",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcBvQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQ&s",
+    category: "fantasy"
+  },
+  {
+    id: 43,
+    name: "Mermaid Plush",
+    price: 39.99,
+    description: "Beautiful sea princess with shimmery tail",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcCvQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQ&s",
+    category: "fantasy"
+  },
+  {
+    id: 44,
+    name: "Wizard Plush",
+    price: 42.99,
+    description: "Wise magic wielder with staff and robes",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcDvQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQ&s",
+    category: "fantasy"
+  },
+  {
+    id: 45,
+    name: "Elf Warrior Plush",
+    price: 40.99,
+    description: "Noble elf hero with bow and arrows",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcEvQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQ&s",
+    category: "fantasy"
   }
 ];
 
@@ -249,7 +369,9 @@ const categories = [
   { id: "all", name: "All Products" },
   { id: "animals", name: "Animal Plush" },
   { id: "kpop", name: "K-pop Idol Plush" },
-  { id: "demon hunter", name: "Demon Hunter Plush" }
+  { id: "demon hunter", name: "Demon Hunter Plush" },
+  { id: "anime", name: "Anime Characters" },
+  { id: "fantasy", name: "Fantasy & Magical" }
 ];
 
 function Products() {
