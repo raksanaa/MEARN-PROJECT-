@@ -3,7 +3,7 @@ name: Backend CI/CD - EC2
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - "backend/**"
 
@@ -23,7 +23,7 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           script: |
             cd ~/mern-aws-ecom/backend
-            git pull origin master
+            git pull origin main
             npm install
             echo "MONGODB_URI=${{ secrets.MONGODB_URI }}" > .env
             echo "PORT=5000" >> .env
