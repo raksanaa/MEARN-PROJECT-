@@ -362,6 +362,318 @@ const products = [
     description: "Noble elf hero with bow and arrows",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcEvQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQ&s",
     category: "fantasy"
+  },
+  {
+    id: 46,
+    name: "Couple Bears Set",
+    price: 59.99,
+    description: "Adorable matching teddy bear couple with heart accessories",
+    img: "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=500",
+    category: "couple"
+  },
+  {
+    id: 47,
+    name: "Wedding Dolls Pair",
+    price: 65.99,
+    description: "Bride and groom plush dolls perfect for anniversaries",
+    img: "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=500",
+    category: "couple"
+  },
+  {
+    id: 48,
+    name: "Matching Penguin Couple",
+    price: 49.99,
+    description: "Cute penguin pair with matching scarves and love hearts",
+    img: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500",
+    category: "couple"
+  },
+  {
+    id: 49,
+    name: "Love Birds Plush Set",
+    price: 44.99,
+    description: "Two adorable birds sitting together on a heart-shaped perch",
+    img: "https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=500",
+    category: "couple"
+  },
+  {
+    id: 50,
+    name: "Romantic Rabbits Duo",
+    price: 52.99,
+    description: "Sweet bunny couple holding hands with pink bows",
+    img: "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=500",
+    category: "couple"
+  },
+  {
+    id: 51,
+    name: "Heart Shaped Plush",
+    price: 29.99,
+    description: "Soft red heart pillow perfect for Valentine's Day",
+    img: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=500",
+    category: "love"
+  },
+  {
+    id: 52,
+    name: "Love Bear with Rose",
+    price: 39.99,
+    description: "Teddy bear holding a red rose with 'I Love You' message",
+    img: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500",
+    category: "love"
+  },
+  {
+    id: 53,
+    name: "Valentine Unicorn",
+    price: 42.99,
+    description: "Pink and white unicorn with heart-shaped horn and wings",
+    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500",
+    category: "love"
+  },
+  {
+    id: 54,
+    name: "Cupid Angel Plush",
+    price: 36.99,
+    description: "Adorable angel with bow and arrow spreading love",
+    img: "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=500",
+    category: "love"
+  },
+  {
+    id: 55,
+    name: "Love Message Elephant",
+    price: 45.99,
+    description: "Gray elephant holding a heart with customizable love message",
+    img: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=500",
+    category: "love"
+  },
+  {
+    id: 56,
+    name: "Valentine Special Bear",
+    price: 49.99,
+    description: "Limited edition red teddy bear with golden heart embroidery",
+    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=500",
+    category: "love"
+  },
+  {
+    id: 57,
+    name: "Heart Eyes Cat",
+    price: 34.99,
+    description: "Cute kitten with heart-shaped eyes and pink bow",
+    img: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=500",
+    category: "love"
+  },
+  {
+    id: 58,
+    name: "Love Panda with Balloon",
+    price: 38.99,
+    description: "Panda holding heart-shaped balloon with love message",
+    img: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=500",
+    category: "love"
+  },
+  {
+    id: 59,
+    name: "Anniversary Bears Duo",
+    price: 67.99,
+    description: "Golden anniversary bears with '25 Years' embroidery",
+    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=500",
+    category: "couple"
+  },
+  {
+    id: 60,
+    name: "Hugging Koalas Set",
+    price: 54.99,
+    description: "Two koalas in eternal embrace with eucalyptus leaves",
+    img: "https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?w=500",
+    category: "couple"
+  },
+  {
+    id: 61,
+    name: "Mr & Mrs Elephants",
+    price: 62.99,
+    description: "Elegant elephant couple with bow tie and veil",
+    img: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=500",
+    category: "couple"
+  },
+  {
+    id: 62,
+    name: "Dancing Foxes Pair",
+    price: 48.99,
+    description: "Adorable fox couple in dancing pose with flowers",
+    img: "https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=500",
+    category: "couple"
+  },
+  {
+    id: 63,
+    name: "Kiss Me Frog Prince",
+    price: 33.99,
+    description: "Green frog with golden crown and red lips",
+    img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500",
+    category: "love"
+  },
+  {
+    id: 64,
+    name: "Love Potion Bear",
+    price: 41.99,
+    description: "Purple bear holding magical love potion bottle",
+    img: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500",
+    category: "love"
+  },
+  {
+    id: 65,
+    name: "Romantic Sloth",
+    price: 37.99,
+    description: "Sleepy sloth with heart-shaped belly and rose",
+    img: "https://images.unsplash.com/photo-1520637836862-4d197d17c93a?w=500",
+    category: "love"
+  },
+  {
+    id: 66,
+    name: "Love Letter Owl",
+    price: 35.99,
+    description: "Wise owl delivering love letters with pink ribbon",
+    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=500",
+    category: "love"
+  },
+  {
+    id: 67,
+    name: "Honeymoon Turtles",
+    price: 56.99,
+    description: "Two turtles with tropical flowers and 'Just Married' sign",
+    img: "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=500",
+    category: "couple"
+  },
+  {
+    id: 68,
+    name: "Valentine Llama",
+    price: 43.99,
+    description: "Fluffy llama with heart sunglasses and pink scarf",
+    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=500",
+    category: "love"
+  },
+  {
+    id: 69,
+    name: "Soft Safety Bear",
+    price: 32.99,
+    description: "Extra soft bear with safety lock eyes, perfect for babies",
+    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=500",
+    category: "kids"
+  },
+  {
+    id: 70,
+    name: "ABC Learning Elephant",
+    price: 45.99,
+    description: "Educational elephant that teaches letters and numbers",
+    img: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=500",
+    category: "kids"
+  },
+  {
+    id: 71,
+    name: "Bedtime Bunny",
+    price: 38.99,
+    description: "Soothing bunny with lullaby sounds for peaceful sleep",
+    img: "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=500",
+    category: "kids"
+  },
+  {
+    id: 72,
+    name: "Counting Sheep Set",
+    price: 52.99,
+    description: "Set of 5 numbered sheep for learning to count",
+    img: "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=500",
+    category: "kids"
+  },
+  {
+    id: 73,
+    name: "Night Light Owl",
+    price: 41.99,
+    description: "Owl with gentle LED night light for bedtime comfort",
+    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=500",
+    category: "kids"
+  },
+  {
+    id: 74,
+    name: "Shape Sorting Turtle",
+    price: 36.99,
+    description: "Interactive turtle teaching shapes and colors",
+    img: "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=500",
+    category: "kids"
+  },
+  {
+    id: 75,
+    name: "Musical Monkey",
+    price: 43.99,
+    description: "Monkey that plays gentle melodies and nursery rhymes",
+    img: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=500",
+    category: "kids"
+  },
+  {
+    id: 76,
+    name: "Teething Ring Giraffe",
+    price: 28.99,
+    description: "Safe silicone teething ring attached to soft giraffe",
+    img: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=500",
+    category: "kids"
+  },
+  {
+    id: 77,
+    name: "Birthday Bear with Cake",
+    price: 48.99,
+    description: "Festive bear holding birthday cake with candles",
+    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=500",
+    category: "gift"
+  },
+  {
+    id: 78,
+    name: "Anniversary Rose Bouquet Set",
+    price: 65.99,
+    description: "Elegant plush roses with anniversary message card",
+    img: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500",
+    category: "gift"
+  },
+  {
+    id: 79,
+    name: "Surprise Gift Box - Small",
+    price: 35.99,
+    description: "Mystery plush toy in beautiful gift wrapping",
+    img: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=500",
+    category: "gift"
+  },
+  {
+    id: 80,
+    name: "Surprise Gift Box - Large",
+    price: 75.99,
+    description: "Premium mystery plush collection in luxury box",
+    img: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=500",
+    category: "gift"
+  },
+  {
+    id: 81,
+    name: "Graduation Owl",
+    price: 42.99,
+    description: "Wise owl wearing graduation cap with diploma",
+    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=500",
+    category: "gift"
+  },
+  {
+    id: 82,
+    name: "Get Well Soon Puppy",
+    price: 39.99,
+    description: "Caring puppy with bandage and 'Feel Better' message",
+    img: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=500",
+    category: "gift"
+  },
+  {
+    id: 83,
+    name: "Congratulations Lion",
+    price: 44.99,
+    description: "Proud lion with 'Congratulations' banner",
+    img: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=500",
+    category: "gift"
+  },
+  {
+    id: 84,
+    name: "Thank You Elephant",
+    price: 41.99,
+    description: "Grateful elephant holding 'Thank You' sign",
+    img: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=500",
+    category: "gift"
   }
 ];
 
@@ -371,7 +683,11 @@ const categories = [
   { id: "kpop", name: "K-pop Idol Plush" },
   { id: "demon hunter", name: "Demon Hunter Plush" },
   { id: "anime", name: "Anime Characters" },
-  { id: "fantasy", name: "Fantasy & Magical" }
+  { id: "fantasy", name: "Fantasy & Magical" },
+  { id: "couple", name: "Couple Plush" },
+  { id: "love", name: "Love Plush" },
+  { id: "kids", name: "Kids & Baby" },
+  { id: "gift", name: "Gift Special" }
 ];
 
 function Products() {
@@ -400,11 +716,12 @@ function Products() {
     <main style={{ padding: "50px 20px", maxWidth: "1200px", margin: "0 auto" }}>
         <h2>Our Toy Collection</h2>
         
-        <div style={{ display: "flex", gap: "15px", marginBottom: "40px" }}>
+        <div style={{ display: "flex", gap: "15px", marginBottom: "40px", overflowX: "auto", whiteSpace: "nowrap", scrollbarWidth: "thin", scrollbarColor: "#8B5CF6 #f0f0f0" }}>
           {categories.map(category => (
             <button
               key={category.id}
               onClick={() => setSelectedCategory(category.id)}
+              style={{ flexShrink: 0, padding: "10px 20px", border: "2px solid #8B5CF6", borderRadius: "25px", background: selectedCategory === category.id ? "#8B5CF6" : "white", color: selectedCategory === category.id ? "white" : "#8B5CF6", cursor: "pointer", fontWeight: "600", transition: "all 0.3s ease" }}
             >
               {category.name}
             </button>
