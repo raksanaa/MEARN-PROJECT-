@@ -16,7 +16,7 @@ export const fetchProducts = async () => {
       img: product.image.startsWith('http') 
         ? product.image 
         : `https://mearn-project-1-bs1e.onrender.com/uploads/${product.image}`,
-      category: "animals"
+      category: product.category
     }));
   } catch (error) {
     console.error('Error fetching products:', error);
