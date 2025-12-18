@@ -13,7 +13,9 @@ export const fetchProducts = async () => {
       name: product.name,
       price: product.price,
       description: product.description,
-      img: `https://mearn-project-1-bs1e.onrender.com/uploads/${product.image}`,
+      img: product.image.startsWith('http') 
+        ? product.image 
+        : `https://mearn-project-1-bs1e.onrender.com/uploads/${product.image}`,
       category: "animals"
     }));
   } catch (error) {
