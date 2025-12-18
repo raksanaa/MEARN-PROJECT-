@@ -8,7 +8,7 @@ function ProductDetail() {
   const { addToCart } = useCart();
   
   const handleBuyNow = () => {
-    addToCart(apiProduct || detailProduct);
+    addToCart(basicProduct || detailProduct);
     navigate('/payment');
   };
   
@@ -195,9 +195,109 @@ function ProductDetail() {
     }
   ];
 
-  const apiProduct = staticProducts.find(p => p.id === parseInt(id));
+  // First try to find in static products from Products.jsx
+  const products = [
+    {
+      id: 1,
+      name: "Panda Plush",
+      price: 29.99,
+      description: "Cute and cuddly panda stuffed animal",
+      img: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=500",
+      category: "animals"
+    },
+    {
+      id: 2,
+      name: "Rabbit Plush",
+      price: 24.99,
+      description: "Soft and adorable rabbit stuffed toy",
+      img: "https://m.media-amazon.com/images/I/51eaZD-zgNL._SY300_SX300_QL70_FMwebp_.jpg",
+      category: "animals"
+    },
+    {
+      id: 3,
+      name: "Rat Plush",
+      price: 19.99,
+      description: "Small and cute rat stuffed animal",
+      img: "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=500",
+      category: "animals"
+    },
+    {
+      id: 4,
+      name: "Bear Plush",
+      price: 34.99,
+      description: "Large fluffy teddy bear for hugging",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlLCp-AlhUP767XwgTSppqRFKUFCF_nqx1QA&s",
+      category: "animals"
+    },
+    {
+      id: 5,
+      name: "Cat Plush",
+      price: 22.99,
+      description: "Soft kitten stuffed animal with whiskers",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7wWwzqxdUP_9b9vTSHi3XC7nJxEhUZskNsQ&s",
+      category: "animals"
+    },
+    {
+      id: 6,
+      name: "Dog Plush",
+      price: 27.99,
+      description: "Adorable puppy plush with floppy ears",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRipaFRIJOXiybSXw3-aWM12HaXbY5exP-uKQ&s",
+      category: "animals"
+    },
+    {
+      id: 7,
+      name: "Elephant Plush",
+      price: 32.99,
+      description: "Large gray elephant with soft trunk",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROJhR_5oWfqmQrtfuSaXgbzQd-QhTYjXB-fg&s",
+      category: "animals"
+    },
+    {
+      id: 8,
+      name: "Lion Plush",
+      price: 28.99,
+      description: "Brave lion king with fluffy mane",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Th_1bsDpFp_Wbf2g8TahoDPrE--AhhdzGQ&s",
+      category: "animals"
+    },
+    {
+      id: 9,
+      name: "Monkey Plush",
+      price: 21.99,
+      description: "Playful monkey with long arms",
+      img: "https://images-cdn.ubuy.co.in/636bf3074a3cf07b74556a12-5-pieces-monkey-plush-toy-set-1-mommy.jpg",
+      category: "animals"
+    },
+    {
+      id: 10,
+      name: "Unicorn Plush",
+      price: 35.99,
+      description: "Magical unicorn with rainbow mane",
+      img: "https://5.imimg.com/data5/SELLER/Default/2024/3/402580974/JH/AN/YB/2227189/unicorn-big-size-doll.jpg",
+      category: "animals"
+    },
+    {
+      id: 11,
+      name: "Dinosaur Plush",
+      price: 26.99,
+      description: "Friendly T-Rex dinosaur toy",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmnPZjLF_Jme_HkCvKX7VwvZvoQPIuQcux7A&s",
+      category: "animals"
+    },
+    {
+      id: 12,
+      name: "Owl Plush",
+      price: 23.99,
+      description: "Wise owl with big round eyes",
+      img: "https://images-cdn.ubuy.co.in/634e8c0df8957469547832b8-plush-figure-toys-owl-plush-doll-cute.jpg",
+      category: "animals"
+    }
+  ];
+  
+  const basicProduct = products.find(p => p.id === parseInt(id));
   const detailProduct = productList.find(p => p.id === parseInt(id));
-  const product = apiProduct ? { ...detailProduct, ...apiProduct, image: apiProduct.img } : detailProduct;
+  const product = basicProduct ? { ...detailProduct, ...basicProduct, image: basicProduct.img } : detailProduct;
 
   if (!product) {
     return <main style={{ padding: "40px", textAlign: "center" }}><h2 style={{ color: "#1e3c72" }}>Product not found</h2></main>;
@@ -206,7 +306,7 @@ function ProductDetail() {
   return (
     <main style={{ padding: "50px 20px", maxWidth: "1100px", margin: "0 auto" }}>
       <div className="professional-card" style={{ padding: "40px", marginBottom: "30px" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "50px" }}>
+        <div className="product-detail-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "50px" }}>
           <img src={product.img || product.image} alt={product.name} style={{ width: "100%", borderRadius: "8px", boxShadow: "0 4px 15px rgba(0,0,0,0.1)" }} />
           <div>
             <h1 style={{ marginTop: 0, fontSize: "2.2rem", color: "#1e3c72", fontWeight: "700" }}>{product.name}</h1>
@@ -217,14 +317,14 @@ function ProductDetail() {
             <p style={{ lineHeight: "1.7", marginTop: "20px", color: "#555" }}>{product.description}</p>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "15px", marginTop: "25px" }}>
               <button 
-                onClick={() => addToCart(apiProduct || detailProduct)}
-                style={{ padding: "15px 20px", fontSize: "1rem", background: "white", color: "#1e3c72", border: "2px solid #1e3c72" }}
+                onClick={() => addToCart(basicProduct || detailProduct)}
+                style={{ padding: "15px 20px", fontSize: "1rem", background: "white", color: "#1e3c72", border: "2px solid #1e3c72", borderRadius: "6px", cursor: "pointer", fontWeight: "600", transition: "all 0.3s ease" }}
               >
                 ADD TO CART
               </button>
               <button 
                 onClick={handleBuyNow}
-                style={{ padding: "15px 20px", fontSize: "1rem" }}
+                style={{ padding: "15px 20px", fontSize: "1rem", background: "#1e3c72", color: "white", border: "none", borderRadius: "6px", cursor: "pointer", fontWeight: "600", transition: "all 0.3s ease" }}
               >
                 BUY NOW
               </button>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { fetchProducts } from "../utils/api";
+import { useCart } from "../context/CartContext";
 
 const products = [
   {
@@ -693,6 +694,7 @@ const categories = [
 function Products() {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [allProducts, setAllProducts] = useState(products);
+  const { addToCart } = useCart();
 
   useEffect(() => {
     const loadBackendProducts = async () => {
@@ -728,22 +730,59 @@ function Products() {
           ))}
         </div>
         
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "30px" }}>
+        <div className="product-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "30px" }}>
           {filteredProducts.map((product) => (
-            <div key={product.id} style={{ padding: "20px", border: "1px solid #ccc" }}>
+            <div key={product.id} className="professional-card" style={{ padding: "20px" }}>
               <img 
                 src={product.img} 
                 alt={product.name} 
-                style={{ width: "100%", height: "200px", objectFit: "cover", border: "1px solid #ddd" }}
+                style={{ width: "100%", height: "200px", objectFit: "cover", borderRadius: "6px", marginBottom: "15px" }}
                 onError={(e) => {
                   console.log('Image failed to load:', product.img);
                   e.target.src = 'https://via.placeholder.com/200x200?text=No+Image';
                 }}
                 onLoad={() => console.log('Image loaded:', product.img)}
               />
-              <h3>{product.name}</h3>
-              <p>${product.price}</p>
-              <p>{product.description}</p>
+              <h3 style={{ margin: "0 0 10px 0", fontSize: "1.2rem", color: "#333" }}>{product.name}</h3>
+              <p style={{ fontSize: "1.4rem", fontWeight: "bold", color: "#8B5CF6", margin: "0 0 10px 0" }}>${product.price}</p>
+              <p style={{ color: "#666", fontSize: "0.9rem", lineHeight: "1.4", margin: "0 0 20px 0" }}>{product.description}</p>
+              <div style={{ display: "flex", gap: "10px" }}>
+                <Link 
+                  to={`/product/${product.id}`}
+                  style={{ 
+                    flex: 1, 
+                    padding: "10px", 
+                    background: "white", 
+                    color: "#8B5CF6", 
+                    border: "2px solid #8B5CF6", 
+                    borderRadius: "6px", 
+                    textDecoration: "none", 
+                    textAlign: "center", 
+                    fontSize: "0.9rem", 
+                    fontWeight: "600",
+                    transition: "all 0.3s ease"
+                  }}
+                >
+                  View Details
+                </Link>
+                <button 
+                  onClick={() => addToCart(product)}
+                  style={{ 
+                    flex: 1, 
+                    padding: "10px", 
+                    background: "#8B5CF6", 
+                    color: "white", 
+                    border: "none", 
+                    borderRadius: "6px", 
+                    fontSize: "0.9rem", 
+                    fontWeight: "600", 
+                    cursor: "pointer",
+                    transition: "all 0.3s ease"
+                  }}
+                >
+                  Add to Cart
+                </button>
+              </div>
             </div>
           ))}
         </div>
