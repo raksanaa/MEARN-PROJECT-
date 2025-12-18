@@ -67,7 +67,7 @@ const updateProduct = async (req, res) => {
       return res.status(400).json({ message: 'Invalid product ID format' });
     }
     
-    const { name, description, price, category, stock } = req.body;
+    const { name, description, price, category, stock, image } = req.body;
     const updateData = {};
     
     // Only update provided fields
@@ -87,8 +87,11 @@ const updateProduct = async (req, res) => {
       updateData.stock = parseInt(stock);
     }
     
+    // Handle image updates (file upload or URL)
     if (req.file) {
       updateData.image = req.file.filename;
+    } else if (image) {
+      updateData.image = image;
     }
 
     const product = await Product.findByIdAndUpdate(
