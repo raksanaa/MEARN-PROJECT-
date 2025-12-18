@@ -734,7 +734,12 @@ function Products() {
               <img 
                 src={product.img} 
                 alt={product.name} 
-                style={{ width: "100%", height: "200px", objectFit: "cover" }}
+                style={{ width: "100%", height: "200px", objectFit: "cover", border: "1px solid #ddd" }}
+                onError={(e) => {
+                  console.log('Image failed to load:', product.img);
+                  e.target.src = 'https://via.placeholder.com/200x200?text=No+Image';
+                }}
+                onLoad={() => console.log('Image loaded:', product.img)}
               />
               <h3>{product.name}</h3>
               <p>${product.price}</p>
