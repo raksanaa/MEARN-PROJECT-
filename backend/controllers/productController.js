@@ -42,7 +42,7 @@ const createProduct = async (req, res) => {
       return res.status(400).json({ message: 'Price and stock must be non-negative' });
     }
     
-    const image = req.file ? req.file.filename : 'sample-teddy.jpg';
+    const image = req.file ? req.file.filename : (req.body.image || 'sample-teddy.jpg');
 
     const product = new Product({
       name: name.trim(),
