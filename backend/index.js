@@ -15,7 +15,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: process.env.FRONTEND_URL || '*',
+  origin: ['http://localhost:3000', 'https://mern-plush-store.vercel.app', process.env.FRONTEND_URL],
   credentials: true
 }));
 app.use(express.json({ limit: '10mb' }));
