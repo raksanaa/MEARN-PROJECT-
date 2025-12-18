@@ -12,20 +12,21 @@ const generateToken = (id) => {
 const register = async (req, res) => {
   try {
     const { name, email, password } = req.body;
+    console.log('Register attempt:', { name, email, password: '***' });
 
     // Validation
     if (!name || !email || !password) {
-      return res.status(400).json({ message: 'Please provide name, email, and password' });
+      return res.status(400).json({ success: false, message: 'Please provide name, email, and password' });
     }
 
     if (password.length < 6) {
-      return res.status(400).json({ message: 'Password must be at least 6 characters' });
+      return res.status(400).json({ success: false, message: 'Password must be at least 6 characters' });
     }
 
     // Check if user exists
-    const existingUser = await User.findOne({ email });
+    const existingUser = await User.findOne({ email: email.toLowerCase().trim() });
     if (existingUser) {
-      return res.status(400).json({ message: 'User already exists with this email' });
+      return res.status(400).json({ success: false, message: 'User already exists with this email' });
     }
 
     // Create user
@@ -48,7 +49,8 @@ const register = async (req, res) => {
       }
     });
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.error('Register error:', error);
+    res.status(500).json({ success: false, message: error.message });
   }
 };
 
@@ -56,22 +58,23 @@ const register = async (req, res) => {
 const login = async (req, res) => {
   try {
     const { email, password } = req.body;
+    console.log('Login attempt:', { email, password: '***' });
 
     // Validation
     if (!email || !password) {
-      return res.status(400).json({ message: 'Please provide email and password' });
+      return res.status(400).json({ success: false, message: 'Please provide email and password' });
     }
 
     // Find user
     const user = await User.findOne({ email: email.toLowerCase().trim() });
     if (!user) {
-      return res.status(401).json({ message: 'Invalid email or password' });
+      return res.status(401).json({ success: false, message: 'Invalid email or password' });
     }
 
     // Check password
     const isPasswordValid = await user.comparePassword(password);
     if (!isPasswordValid) {
-      return res.status(401).json({ message: 'Invalid email or password' });
+      return res.status(401).json({ success: false, message: 'Invalid email or password' });
     }
 
     // Generate token
@@ -87,7 +90,8 @@ const login = async (req, res) => {
       }
     });
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.error('Login error:', error);
+    res.status(500).json({ success: false, message: error.message });
   }
 };
 
