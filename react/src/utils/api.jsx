@@ -1,6 +1,4 @@
-const API_BASE_URL = process.env.NODE_ENV === 'production' 
-  ? 'https://your-backend-domain.com/api' 
-  : 'http://localhost:5000/api';
+const API_BASE_URL = 'https://mearn-project-1-bs1e.onrender.com/api';
 
 // Fetch products from backend
 export const fetchProducts = async () => {
@@ -15,9 +13,7 @@ export const fetchProducts = async () => {
       name: product.name,
       price: product.price,
       description: product.description,
-      img: process.env.NODE_ENV === 'production'
-        ? `https://your-backend-domain.com/uploads/${product.image}`
-        : `http://localhost:5000/uploads/${product.image}`,
+      img: `https://mearn-project-1-bs1e.onrender.com/uploads/${product.image}`,
       category: "animals"
     }));
   } catch (error) {
