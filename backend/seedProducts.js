@@ -8,7 +8,7 @@ const products = [
     name: "Naruto Uzumaki Plush",
     description: "Orange ninja with dream to become Hokage",
     price: 39.99,
-    image: "naruto-plush.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIfMgxWMdydwYQxKA3jM95jTdFrFSYtJzHP_T_cl5004lDky5VyPZ4pL_p5kFZK2MFZKk&usqp=CAU",
     category: "anime",
     stock: 25
   },
@@ -16,7 +16,7 @@ const products = [
     name: "Pikachu Plush",
     description: "Electric mouse Pokemon with rosy cheeks",
     price: 34.99,
-    image: "pikachu-plush.jpg",
+    image: "https://m.media-amazon.com/images/I/61XYZ123ABC.jpg",
     category: "anime",
     stock: 30
   },
@@ -24,7 +24,7 @@ const products = [
     name: "Totoro Plush",
     description: "Forest spirit from Studio Ghibli",
     price: 45.99,
-    image: "totoro-plush.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQ&s",
     category: "anime",
     stock: 20
   },
@@ -57,7 +57,7 @@ const products = [
     name: "Dragon Plush",
     description: "Majestic fire-breathing dragon",
     price: 49.99,
-    image: "dragon-plush.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcWvQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQxQ&s",
     category: "fantasy",
     stock: 15
   },
